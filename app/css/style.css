@@ -36,14 +36,35 @@ body{
 	color: #0099ff;
 }
 
-.botao-play{
+.box-grupo{
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}
 
+.botao-play{
+    text-align: center;
+    background: #77b300;
+    color: #fff;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .botao-stop{
-	
+	text-align: center;
+	background: #ff3333;
+    color: #fff;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .botao-pause{
-	
+	text-align: center;
+	background: #e6b800;
+    color: #fff;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
 }
+
