@@ -1,3 +1,7 @@
+var hora = 0;
+var minuto = 0;
+var segundo = 0;
+
 function Play(){
 
 }
