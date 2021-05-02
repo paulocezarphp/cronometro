@@ -49,8 +49,8 @@ body{
 .numero2{
 	font-size: 40px;
 	text-align: center;
-	color: #0099ff;
 	display: grid;
+	grid-template-columns: 50% 50%;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
@@ -59,17 +59,34 @@ body{
 	user-select: none;
 }
 
-.numero2{
-	
-}
+
 
 .numero_cima{
+   cursor: pointer;
+   color: #ccc;
+}
 
+.numero_cima:hover{
+   color: #3399ff;
+}
+
+.numero_cima:active{
+   color: #ccc;
 }
 
 .numero_baixo{
-
+   cursor: pointer;
+   color: #ccc;
 }
+
+.numero_baixo:hover{
+   color: #ff4d4d;
+}
+
+.numero_baixo:active{
+   color: #ccc;
+}
+
 
 .simbolo{
 	font-size: 100px;
@@ -89,6 +106,12 @@ body{
 	padding: 20px;
 	font-size: 20px;
 	font-weight: bold;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 .botao-stop{
@@ -98,6 +121,12 @@ body{
 	padding: 20px;
 	font-size: 20px;
 	font-weight: bold;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 .botao-pause{
@@ -107,5 +136,11 @@ body{
 	padding: 20px;
 	font-size: 20px;
 	font-weight: bold;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
