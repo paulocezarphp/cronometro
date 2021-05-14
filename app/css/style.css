@@ -114,6 +114,14 @@ body{
 	user-select: none;
 }
 
+.botao-play:hover{
+    background: #777;
+}
+
+.botao-play:active{
+    background: #77b300;
+}
+
 .botao-stop{
 	text-align: center;
 	background: #ff3333;
@@ -127,6 +135,14 @@ body{
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+}
+
+.botao-stop:hover{
+    background: #777;
+}
+
+.botao-stop:active{
+    background: #77b300;
 }
 
 .botao-pause{
@@ -144,3 +160,10 @@ body{
 	user-select: none;
 }
 
+.botao-pause:hover{
+    background: #777;
+}
+
+.botao-pause:active{
+    background: #77b300;
+}

@@ -1,6 +1,6 @@
 var horas = 0;
-var minuto = 0;
-var segundo = 0;
+var minutos = 0;
+var segundos = 0;
 var estado = "stop"; //play, pause, stop
 
 function Play(){
@@ -9,6 +9,12 @@ function Play(){
 
 function Stop(){
 	estado = "stop";
+	horas = 0;
+    minutos = 0;
+    segundos = 0;
+    document.getElementById("horas").innerHTML = "00";
+    document.getElementById("minutos").innerHTML = "00";
+    document.getElementById("segundos").innerHTML = "00";
 }
 
 function Pause(){
@@ -45,7 +51,43 @@ function ExecutaTempo(){
     }else if(estado == "pause"){
 
     }else if(estado == "play"){
+    	   	
+    	if(segundos == 60){
+    		segundos = 0; 
+    		minutos++;     
+    		document.getElementById("minutos").innerHTML = "" + minutos;
+    		document.getElementById("segundos").innerHTML = "0" + segundos;       
+    	}
+
+    	if(minutos == 60){   		
+    		minutos = 0;
+    		horas++;  
+    		document.getElementById("horas").innerHTML = "" + horas;      
+    		document.getElementById("minutos").innerHTML = "0" + minutos;     
+    	}
     	
+    	if(segundos > 9){
+            document.getElementById("segundos").innerHTML = "" + segundos;
+    	}else{
+             document.getElementById("segundos").innerHTML = "0" + segundos;
+    	}
+
+    	if(minutos > 9){
+            document.getElementById("minutos").innerHTML = "" + minutos;
+    	}else{
+            document.getElementById("minutos").innerHTML = "0" + minutos;
+    	}
+
+    	if(horas > 9){
+            document.getElementById("horas").innerHTML = "" + horas;
+    	}else{
+    		document.getElementById("horas").innerHTML = "0" + horas;
+    	}
+
+    	
+
+    	segundos++;
+
     }else{
 
     }
@@ -61,4 +103,4 @@ document.getElementById("m_baixo").addEventListener("click", DiminuirMinuto);
 document.getElementById("s_cima").addEventListener("click", AlmentarSegundo);
 document.getElementById("s_baixo").addEventListener("click", DiminuirSegundo);
 
-setInterval(ExecutaTempo,1000);
+setInterval(ExecutaTempo,150);
